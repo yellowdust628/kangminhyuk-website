@@ -32,3 +32,21 @@
 .teaser-caption{font-size:9px;letter-spacing:.2em;color:#b2c1d7}
 @media(max-width:800px){.teaser-layout{grid-template-columns:1fr;gap:32px}.teaser-brand{min-height:260px}.footer nav{flex-wrap:wrap}}
 @media(max-width:480px){.header{height:auto;min-height:98px;align-items:flex-start;gap:12px;padding-block:16px;flex-wrap:wrap}.header nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}.header .brand{line-height:1}.footer{gap:18px}.footer>div{flex:1;min-width:0}.footer nav{gap:10px 14px}}
+.home-page .header{height:88px}
+.home-intro{padding-block:24px 26px}
+.home-intro-main{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:16px}
+.home-intro h1{font-size:clamp(46px,6.3vw,86px);line-height:1.05;letter-spacing:-.07em;margin:0;max-width:none}
+.home-intro h1>span{white-space:nowrap}
+.home-intro-main>p{flex-shrink:0;font-size:14px;line-height:1.8;margin:0 0 5px;color:var(--muted)}
+.home-news{padding-block:24px 40px;border-top:1px solid var(--line);scroll-margin-top:24px}
+.home-launch{position:relative;display:grid;grid-template-columns:1fr .6fr;gap:32px;align-items:center;margin-top:18px;padding:28px 36px;border-radius:6px;background:#0c1525;color:#f0f5ff}
+.home-launch:hover{background:#14233b;color:#f0f5ff}
+.home-launch h2{font-size:clamp(28px,2.8vw,38px);line-height:1.35;letter-spacing:-.045em;margin:14px 0 9px;word-break:keep-all}
+.home-launch p{font-size:13px;line-height:1.85;color:#b2c1d7;margin:0}
+.home-launch-cta{display:inline-flex;gap:26px;margin-top:16px;font-size:12px;color:#8ce9d0}
+.home-launch-brand{display:flex;flex-direction:column;align-items:center;gap:12px}
+.home-launch-brand img{display:block;width:min(230px,100%);height:auto}
+.home-launch-brand>span{font-size:8px;letter-spacing:.2em;color:#b2c1d7}
+@media(max-width:800px){.home-intro-main{display:block;margin-top:14px}.home-intro h1{font-size:clamp(44px,7.8vw,64px)}.home-intro-main>p{margin:12px 0 0;font-size:13px}.home-launch{padding:24px 28px;gap:20px}.home-launch h2{font-size:29px}.home-launch-brand>span{display:none}}
+@media(max-width:480px){.home-page .header{height:72px;min-height:72px;padding-block:0;gap:14px;align-items:center;flex-wrap:nowrap}.home-page .header nav{width:auto;gap:14px;font-size:11px;justify-content:normal;white-space:nowrap;flex-shrink:0}.home-page .header .brand{font-size:28px}.home-intro{padding-block:19px 22px}.home-intro h1{font-size:46px;line-height:1.02}.home-intro-main>p{margin-top:10px}.home-news{padding-block:20px 28px}.home-launch{display:block;padding:22px;margin-top:14px}.home-launch h2{font-size:27px;margin-top:18px}.home-launch-brand{position:absolute;right:22px;top:20px;width:106px}.home-launch-brand img{width:106px}.home-launch p{font-size:12px}.home-launch .coming-pill{font-size:9px;padding:5px 10px}.home-launch-cta{font-size:11px;margin-top:14px}}
+@media(max-width:360px){.home-page .header{gap:8px}.home-page .header .brand{font-size:25px}.home-page .header nav{gap:8px;font-size:10px}.home-intro h1{font-size:42px}.home-launch h2{font-size:24px}.home-launch-brand,.home-launch-brand img{width:94px}}
