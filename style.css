@@ -19,3 +19,16 @@
 @media(min-width:1500px){h1{font-size:166px}}
 @media(max-width:800px){.wrap{width:calc(100% - 44px)}.header{height:85px}.header-note{display:none}nav{gap:20px;font-size:12px}.hero{padding-top:24px;padding-bottom:40px}h1{margin:54px 0 55px;font-size:clamp(65px,12.8vw,105px);max-width:100%}.hero-art{top:24%;width:35%;height:52%;right:-2%}.hero-art span{font-size:280px}.hero-bottom p{font-size:15px}.hero-caption{font-size:9px}.round-link{margin-right:3%;width:44px;height:44px}.section{padding-block:56px}.about,.news{grid-template-columns:1fr;gap:32px}.about h2{font-size:35px}.section-heading{display:block;margin:28px 0 32px}.section-heading p{margin-top:18px}.channel{gap:22px;padding-block:27px}.channel-title{font-size:39px}.channel-action{font-size:0;gap:0}.channel-action b{font-size:29px}.channel-number{padding-top:7px}.channel-title>span{font-size:10px;letter-spacing:0}.footer{gap:24px;flex-wrap:wrap;padding-block:32px}.footer-note{display:none}.footer nav{gap:14px}.hero-art{opacity:.65}.legal{padding-block:35px 55px}.legal dl{grid-template-columns:1fr;gap:5px}.legal dd{margin-bottom:15px}.draft-notice{padding:16px}.desktop-break{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.channel{transition:none}}
+.drumup-teaser{border-top:1px solid var(--line)}
+.teaser-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center;margin-top:36px}
+.teaser-kicker{font-size:10px;letter-spacing:.18em;color:var(--accent);margin:0 0 20px}
+.teaser-layout h2{font-size:clamp(28px,3.1vw,42px);line-height:1.5;word-break:keep-all}
+.teaser-layout .muted{font-size:14px;line-height:1.9;margin-top:22px}
+.teaser-brand{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:36px;background:#0c1525;min-height:300px;border-radius:4px;color:#f0f5ff}
+.teaser-brand:hover{color:#f0f5ff;background:#14233b}
+.coming-pill{display:inline-flex;align-items:center;gap:8px;width:fit-content;border:1px solid #365d5a;border-radius:999px;color:#8ce9d0;padding:6px 12px;font-size:10px;letter-spacing:.14em}
+.coming-pill:before{content:"";width:5px;height:5px;border-radius:50%;background:#8ce9d0}
+.teaser-logo{display:block;width:min(260px,100%);height:auto}
+.teaser-caption{font-size:9px;letter-spacing:.2em;color:#b2c1d7}
+@media(max-width:800px){.teaser-layout{grid-template-columns:1fr;gap:32px}.teaser-brand{min-height:260px}.footer nav{flex-wrap:wrap}}
+@media(max-width:480px){.header{height:auto;min-height:98px;align-items:flex-start;gap:12px;padding-block:16px;flex-wrap:wrap}.header nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}.header .brand{line-height:1}.footer{gap:18px}.footer>div{flex:1;min-width:0}.footer nav{gap:10px 14px}}
