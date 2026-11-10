@@ -14,6 +14,7 @@
 .masthead-top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 138px; }
 .masthead-caption { font-size: 10px; line-height: 1.9; letter-spacing: .1em; }
 .masthead-caption-right { text-align: right; }
+.masthead-caption-right time { font-size: 11px; letter-spacing: 0; }
 .masthead-logo { font-family: Arial, sans-serif; font-size: 94px; line-height: 1; font-weight: 900; letter-spacing: -.09em; padding-right: .09em; }
 .masthead-logo:hover { color: var(--ink); }
 .masthead-logo span { margin-left: .02em; }
@@ -62,10 +63,11 @@
 .connect-heading { margin-block: 23px 24px; }
 .connect-heading h3 { font-family: var(--editorial-serif); font-size: clamp(25px, 2.9vw, 36px); font-weight: 400; letter-spacing: -.05em; line-height: 1.5; margin: 0; }
 .connect-heading p { font-size: 12px; color: var(--muted); margin: 7px 0 0; }
-.editorial-channel { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 24px; border-top: 1px solid var(--line); }
+.editorial-channel { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; align-items: center; gap: 18px; padding-block: 18px; border-top: 1px solid var(--line); }
 .editorial-channel:last-child { border-bottom: 1px solid var(--line); }
-.editorial-channel-name { font-family: var(--editorial-serif); font-size: 30px; line-height: 1.2; letter-spacing: -.035em; }
-.editorial-channel-name small { display: block; margin-top: 11px; font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif; font-size: 10px; letter-spacing: 0; color: var(--muted); }
+.editorial-channel-image { display: block; width: 96px; height: 96px; object-fit: cover; filter: grayscale(1); background: #eee; }
+.editorial-channel-name { min-width: 0; font-family: var(--editorial-serif); font-size: 28px; line-height: 1.2; letter-spacing: -.035em; }
+.editorial-channel-name small { display: block; margin-top: 11px; font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif; font-size: 10px; line-height: 1.6; letter-spacing: 0; color: var(--muted); overflow-wrap: anywhere; }
 .editorial-channel-arrow { font-family: Arial, sans-serif; font-size: 26px; }
 .editorial-contact { display: flex; align-items: center; justify-content: space-between; gap: 30px; border-block: 1px solid var(--line); padding-block: 25px; }
 .editorial-contact > div { display: flex; align-items: center; gap: 30px; }
@@ -82,6 +84,10 @@
   .home-page .book-layout { grid-template-columns: 1fr; gap: 24px; }
   .home-page .book-visual { width: min(100%, 310px); }
   .home-page .book-details { grid-template-columns: repeat(2, 1fr); }
+  .editorial-channel { grid-template-columns: 72px minmax(0, 1fr) auto; gap: 14px; }
+  .editorial-channel-image { width: 72px; height: 72px; }
+  .editorial-channel-name { font-size: 25px; }
+  .editorial-channel-name small { font-size: 9px; }
 }
 @media (max-width: 700px) {
   .home-page .wrap { width: calc(100% - 36px); }
@@ -116,8 +122,9 @@
   .home-page .book-description { font-size: 11px; margin-block: 12px 15px; }
   .connect-heading { margin-block: 15px 20px; }
   .connect-heading h3 { font-size: 30px; }
-  .editorial-channel { padding-block: 21px; }
-  .editorial-channel-name { font-size: 31px; }
+  .editorial-channel { grid-template-columns: 84px minmax(0, 1fr) auto; padding-block: 18px; }
+  .editorial-channel-image { width: 84px; height: 84px; }
+  .editorial-channel-name { font-size: 29px; }
   .editorial-contact { display: block; padding-block: 22px; }
   .editorial-contact h2 { font-size: 23px; }
   .editorial-contact > div { gap: 18px; }
@@ -142,4 +149,7 @@
   .home-page .book-layout { grid-template-columns: 1fr; gap: 22px; }
   .home-page .book-visual { width: min(100%, 280px); }
   .home-page .book-copy h3 { font-size: 29px; }
+  .editorial-channel { grid-template-columns: 68px minmax(0, 1fr) auto; }
+  .editorial-channel-image { width: 68px; height: 68px; }
+  .editorial-channel-name { font-size: 25px; }
 }
