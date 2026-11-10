@@ -65,7 +65,7 @@
 .connect-heading p { font-size: 12px; color: var(--muted); margin: 7px 0 0; }
 .editorial-channel { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; align-items: center; gap: 18px; padding-block: 18px; border-top: 1px solid var(--line); }
 .editorial-channel:last-child { border-bottom: 1px solid var(--line); }
-.editorial-channel-image { display: block; width: 96px; height: 96px; object-fit: cover; filter: grayscale(1); background: #eee; }
+.editorial-channel-image { display: block; width: 96px; height: 96px; object-fit: cover; background: #eee; }
 .editorial-channel-name { min-width: 0; font-family: var(--editorial-serif); font-size: 28px; line-height: 1.2; letter-spacing: -.035em; }
 .editorial-channel-name small { display: block; margin-top: 11px; font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif; font-size: 10px; line-height: 1.6; letter-spacing: 0; color: var(--muted); overflow-wrap: anywhere; }
 .editorial-channel-arrow { font-family: Arial, sans-serif; font-size: 26px; }
