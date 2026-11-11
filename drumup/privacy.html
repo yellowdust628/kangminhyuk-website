@@ -1,15 +1,129 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#0c1525"><title>DrumUp 개인정보처리방침 · 출시 전 사전 안내</title><meta name="description" content="DrumUp의 기기 내 음원·연습 설정 처리와 삭제 방법을 안내하는 출시 전 사전 안내본입니다."><link rel="canonical" href="https://www.kangminhyuk.co.kr/drumup/privacy.html"><meta property="og:type" content="website"><meta property="og:title" content="DrumUp 개인정보처리방침 · 출시 전 사전 안내"><meta property="og:description" content="운영자 정보와 시행일은 출시 전 확정합니다."><meta property="og:url" content="https://www.kangminhyuk.co.kr/drumup/privacy.html"><meta property="og:image" content="https://www.kangminhyuk.co.kr/assets/drumup-app-icon.png"><link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="./drumup.css"></head>
-<body class="drumup-page"><a class="skip" href="#main">본문 바로가기</a><header class="header wrap"><a class="brand" href="../index.html" aria-label="강민혁 홈페이지">KMH<span class="dot">.</span></a><nav aria-label="DrumUp 문서 메뉴"><a href="./">DrumUp 안내</a><a href="./terms.html">이용약관</a></nav></header>
-<main id="main" class="legal app-legal wrap"><div class="eyebrow">DRUMUP / PRIVACY</div><h1>DrumUp<br>개인정보처리방침</h1><div class="draft-notice"><strong>출시 전 사전 안내본</strong><br>작성·확인일: 2026년 11월 11일<br>운영자 명칭, 개인정보 문의 이메일 및 시행일: <strong>출시 전 확정</strong><br>현재 개발 중인 앱 구성을 기준으로 한 안내입니다. 최종 배포 앱의 데이터 처리와 외부 구성요소를 확인하고 법률 검토를 거쳐 정식 방침을 확정합니다.</div>
-<p>DrumUp은 사용자가 선택한 음악을 듣고 반복하며 드럼 연습을 할 수 있도록 준비 중인 Android 앱입니다. 이 문서는 DrumUp 앱의 개인정보 처리에 관한 사전 안내이며, 공식 홈페이지 방문에 관한 사항은 <a href="../privacy.html">홈페이지 개인정보처리방침</a>에서 안내합니다.</p>
-<h2>1. 운영자와 개인정보 문의</h2><dl><dt>운영자 명칭</dt><dd>출시 전 확정 — 실제 서비스 운영 주체와 스토어 표시 정보를 일치시켜 안내합니다.</dd><dt>보호 담당자</dt><dd>출시 전 확정 — 개인정보 보호책임자 또는 담당 부서를 안내합니다.</dd><dt>문의 이메일</dt><dd>출시 전 확정 — 개인정보 열람·정정·삭제·처리정지 등 권리 행사 창구를 안내합니다.</dd><dt>시행일</dt><dd>출시 전 확정 — 정식 공개 방침에 표시합니다.</dd></dl>
-<h2>2. 처리하는 정보와 목적</h2><p>현재 개발 구성은 선택한 음원과 연습 설정을 기기 안에서 처리하도록 구현되어 있습니다. 회원가입·서버 계정·서버 동기화, 광고·결제 및 자체 방문 분석 기능은 현재 구현되어 있지 않습니다. 정식 출시 시 기능이 달라지면 실제 처리 내용에 맞춰 방침을 갱신합니다.</p>
-<table><thead><tr><th scope="col">정보·기능</th><th scope="col">현재 개발 구성에서의 처리 목적과 위치</th></tr></thead><tbody><tr><td>사용자가 선택한 음원과 파일 표시명</td><td>사용자가 Android 파일 선택 화면에서 고른 파일을 앱 내부 저장공간으로 복사해 가져오기, 음원 처리 및 재생에 사용합니다. 사용자가 선택한 외부 원본 파일은 원래 위치에 남습니다.</td></tr><tr><td>음원 처리 결과와 임시 파일</td><td>분리·재생을 위한 오디오 파일을 앱 내부에 생성합니다. 기기 성능과 음원 길이에 따라 처리 시간과 저장공간 사용량이 달라집니다.</td></tr><tr><td>곡별 연습 설정</td><td>BPM, 클릭 시작점, 재생 위치·속도, 듣기 모드·음량, 반복 구간 및 저장한 연습 이름 등을 연습 재개와 보관함 기능에 사용합니다.</td></tr><tr><td>음성 카운트</td><td>설치된 Android 음성 읽기 엔진에 고정 숫자 단어를 전달해 카운트 음성을 만듭니다. 선택한 음원·파일명·BPM·연습 기록은 해당 엔진에 전달하지 않는 구성입니다.</td></tr><tr><td>기기 내 진단 로그</td><td>오류나 재생 상태를 확인하는 Android 진단 로그에 파일명·경로 등 일부 정보가 포함될 수 있습니다. 현재 자체 오류 수집 서버로 보내는 기능은 확인되지 않았습니다.</td></tr></tbody></table>
-<h2>3. 외부 전송과 외부 서비스</h2><p>현재 앱은 직접 인터넷 접속 권한을 제거하고, 오디오 처리용 구성요소의 자동 정보 수집을 차단하도록 구성하고 있습니다. 최종 출시 앱과 포함된 구성요소의 실제 처리 동작을 검증한 뒤 외부 전송, 처리위탁, 제3자 제공 및 국외 이전의 해당 여부를 확정합니다.</p><p>Android 음성 읽기 엔진과 파일 선택기에 연결된 클라우드 저장소는 별도 앱 또는 서비스일 수 있습니다. 이들의 자체 통신과 데이터 처리에는 각 제공자의 정책이 적용될 수 있습니다. 이 안내는 기기 운영체제나 다른 서비스의 모든 통신이 없다는 의미가 아닙니다.</p><p>현재 앱에는 자체 클라우드 백업 기능이 없고, 앱의 Android 자동 백업도 제외하는 구성입니다. 사용자가 별도 도구로 내보내거나 보관한 파일은 해당 도구와 저장 위치에서 관리해야 합니다.</p>
-<h2>4. 보관기간과 삭제 방법</h2><p>현재 개발 구성에서는 음원과 연습 설정을 기능 이용에 필요한 동안 기기에 보관합니다. 보관함 항목을 삭제할 수 있으나, 같은 음원을 현재 곡 또는 다른 연습 항목이 참조하면 관련 음원 파일이 즉시 지워지지 않을 수 있습니다. 다른 곡을 선택하고 참조하는 보관함 항목을 정리하거나, Android 설정에서 DrumUp의 앱 저장공간을 삭제하거나 앱을 제거해 앱 내부 데이터를 지울 수 있습니다.</p><p>음성 합성용 임시 파일은 처리 완료·취소·실패 시 정리하는 구성입니다. 강제 종료 등으로 남은 임시 캐시는 Android의 앱 캐시 또는 저장공간 삭제로 정리할 수 있습니다. 앱 내부 데이터 삭제는 사용자가 외부에서 선택한 원본 음원을 삭제하는 작업과는 별개입니다.</p><p>향후 운영자가 별도로 수집·보관하는 개인정보가 생기면 실제 처리 근거, 보유기간, 파기 절차와 방법, 법령상 보존 대상 등을 정식 방침에 명시합니다.</p>
-<h2>5. 기기 권한</h2><p>현재 개발 구성은 재생 중 백그라운드 서비스와 화면·기기 절전 관련 Android 기능을 사용합니다. 마이크·카메라·연락처·위치·광범위 저장소 읽기 권한을 요청하는 구성은 아닙니다. 음원은 사용자가 시스템 파일 선택 화면에서 직접 고릅니다. 최종 출시 앱의 권한과 이용 목적을 다시 확인하여 안내합니다.</p>
-<h2>6. 제3자 제공·위탁·국외 이전</h2><p>현재 자체 계정이나 수집 서버를 통해 개인정보를 제공하는 기능은 구현되어 있지 않습니다. 다만 포함된 구성요소, 외부 서비스 및 정식 운영 구조를 기준으로 제공·위탁·국외 이전 관계를 최종 확인해야 합니다. 해당하는 처리가 있으면 제공받는 자·수탁자·이전받는 자, 목적, 항목, 국가, 시기·방법, 보유기간, 법적 근거 및 거부 방법 등 적용되는 사항을 정식 방침에 반영합니다.</p>
-<h2>7. 정보주체와 법정대리인의 권리</h2><p>정보주체와 적법한 법정대리인은 적용 법령에 따라 개인정보 열람, 정정·삭제, 처리정지 등을 요청할 수 있습니다. 기기에 저장된 정보는 앱 기능과 Android 앱 저장공간 설정을 통해 관리할 수 있습니다. 운영자가 처리하는 정보에 대한 권리 행사 방법과 본인·대리인 확인 절차는 공개 문의 창구와 함께 출시 전 확정합니다.</p>
-<h2>8. 안전성 확보와 변경 안내</h2><p>선택한 음원과 연습 정보를 앱 내부 저장공간에서 관리하고 불필요한 권한과 외부 전송 경로를 줄이는 구성을 적용하고 있습니다. 최종 운영 구조에 따라 접근 권한 관리, 보관·파기 및 문의 처리 절차 등 실제 안전조치를 확인해 정식 방침에 반영합니다.</p><p>문의 창구 확정, 기능 추가 또는 데이터 처리 변경이 있을 때에는 이 페이지를 갱신하고, 정식 시행일과 주요 변경 내용을 안내합니다. 사전 안내본은 최종 출시 앱과 스토어의 개인정보 표시를 확정했다는 의미가 아닙니다.</p>
-<p class="source-links">작성 참고: <a href="https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1029332621" target="_blank" rel="noopener noreferrer">개인정보 보호법 제30조 (새 창)</a> · <a href="https://support.google.com/googleplay/android-developer/answer/10144311" target="_blank" rel="noopener noreferrer">Google Play 사용자 데이터 정책 (새 창)</a></p><nav class="legal-policy-links" aria-label="관련 안내"><a href="./">DrumUp 오픈 안내</a><a href="./terms.html">DrumUp 이용약관</a><a href="../index.html">공식 홈페이지</a></nav></main><footer class="footer wrap app-footer"><span>DrumUp · 출시 전 사전 안내</span></footer></body></html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1525">
+  <title>druMup 개인정보처리방침 · Privacy Policy</title>
+  <meta name="description" content="druMup의 기기 내 음원 처리, 연습 설정, 보관·삭제 방법 및 개인정보 문의 안내. Korean and English privacy policy.">
+  <link rel="canonical" href="https://www.kangminhyuk.co.kr/drumup/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="druMup 개인정보처리방침 · Privacy Policy">
+  <meta property="og:description" content="운영자 강민혁 · 개인정보 문의 druminghyuk@gmail.com · 시행일 2026-11-12">
+  <meta property="og:url" content="https://www.kangminhyuk.co.kr/drumup/privacy.html">
+  <meta property="og:image" content="https://www.kangminhyuk.co.kr/assets/drumup-app-icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./drumup.css">
+  <style>
+    .app-legal{overflow-wrap:anywhere}.policy-meta{padding:24px;border:1px solid #31534f;border-left:3px solid #8ce9d0;background:#14233b;line-height:1.9;margin:28px 0}.policy-meta p{margin:0}.policy-languages{display:flex;gap:24px;flex-wrap:wrap;margin:24px 0 36px}.policy-languages a{border-bottom:1px solid #426960;padding-bottom:5px}.policy-section{scroll-margin-top:30px}.policy-section+ .policy-section{border-top:1px solid #31534f;margin-top:64px;padding-top:38px}.app-legal h3{font-size:18px;margin-top:28px}.policy-section p,.policy-section li{line-height:1.9}.policy-section li+li{margin-top:10px}.policy-section strong{color:#f0f5ff}@media(max-width:700px){.policy-meta{padding:18px}.app-legal h1{font-size:clamp(32px,9vw,48px)}}
+  </style>
+</head>
+<body class="drumup-page">
+  <a class="skip" href="#main">본문 바로가기 / Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="../index.html" aria-label="강민혁 홈페이지">KMH<span class="dot">.</span></a>
+    <nav aria-label="DrumUp 문서 메뉴"><a href="./">DrumUp 안내</a><a href="./terms.html">이용약관</a></nav>
+  </header>
+  <main id="main" class="legal app-legal wrap">
+    <div class="eyebrow">DRUMUP / PRIVACY</div>
+    <h1>druMup<br>개인정보처리방침</h1>
+    <p lang="en">Privacy Policy</p>
+    <div class="policy-meta">
+      <p><strong>시행일 / Effective date: 2026-11-12</strong></p>
+      <p>운영자 / Operator: 강민혁 (MIN HYUK KANG)</p>
+      <p>Google Play 개발자 표시명 / Developer name: KANG MIN HYUK</p>
+      <p>개인정보 문의 / Privacy contact: <a href="mailto:druminghyuk@gmail.com">druminghyuk@gmail.com</a></p>
+      <p>대상 앱 / App: druMup (DrumUp) · com.rhythmk.drumup</p>
+    </div>
+    <nav class="policy-languages" aria-label="정책 언어 / Policy languages"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a></nav>
+
+    <section id="ko" class="policy-section" lang="ko" aria-labelledby="ko-title">
+      <h2 id="ko-title">한국어</h2>
+      <p>이 방침은 강민혁이 운영하는 Android 드럼 연습 앱 druMup의 개인정보 처리와 이용자의 선택을 설명합니다. druMup은 사용자가 직접 선택한 음원과 연습 설정을 기기 안에서 처리합니다. 회원가입이나 로그인 없이 사용할 수 있으며, 현재 앱에는 광고, 결제, 서버 동기화 또는 자체 이용행태 분석 기능이 없습니다.</p>
+
+      <h3>1. 기기 안에서 처리하는 정보</h3>
+      <ul>
+        <li><strong>선택한 음원과 파일 표시명:</strong> Android 파일 선택 화면에서 고른 파일을 앱 내부 저장공간에 복사하여 불러오기, 드럼 분리, 재생 및 보관함 표시에 사용합니다. 외부 원본 파일은 원래 위치에 남습니다.</li>
+        <li><strong>처리 결과와 임시 파일:</strong> 분리한 드럼·반주와 재생용 오디오, 처리 중 필요한 임시 파일을 기기에 생성합니다. 선택한 음원을 운영자의 서버에 업로드하거나 AI 모델을 학습시키는 데 사용하지 않습니다.</li>
+        <li><strong>연습 설정:</strong> BPM, 클릭 시작점, 재생 위치·속도, 듣기 모드, 음악·클릭 음량, 반복 구간, 저장한 연습 이름 및 앱 환경설정을 기기에 보관하여 연습을 다시 불러오고 설정을 유지합니다.</li>
+        <li><strong>음성 카운트:</strong> 설치된 Android 음성 읽기 엔진의 오프라인 영어 음성을 사용하며, 고정 단어 one, two, three, four만 전달합니다. 선택한 음원, 파일명, BPM 또는 연습 기록은 음성 읽기 엔진에 전달하지 않습니다.</li>
+        <li><strong>기기 내 진단 정보:</strong> 오류와 재생 상태를 확인하는 Android 진단 로그에 파일명·경로 등 일부 정보가 포함될 수 있습니다. 앱이 이러한 로그를 운영자의 오류 수집 서버에 자동 전송하는 기능은 없습니다.</li>
+      </ul>
+
+      <h3>2. 외부 전송과 외부 서비스</h3>
+      <p>druMup은 인터넷 직접 접속 권한을 사용하지 않으며 음원과 연습 기록을 운영자 서버로 전송하지 않습니다. 기기 내 AI 처리에 사용하는 ONNX Runtime의 자동 사용정보 전송은 비활성화되어 있습니다. 음원·연습 데이터를 제3자에게 판매하거나 광고 목적으로 공유하지 않습니다.</p>
+      <p>Android 운영체제, Google Play, 음성 읽기 엔진, 파일 선택기에 연결된 클라우드 저장소는 별도의 서비스입니다. 사용자가 클라우드에 있는 파일을 선택하거나 외부 서비스를 이용하면 해당 제공자의 설정과 개인정보처리방침에 따라 정보가 처리될 수 있습니다. 앱의 기기 내 처리가 휴대폰 전체 또는 다른 서비스의 통신을 차단한다는 의미는 아닙니다.</p>
+      <p>앱 자체 클라우드 백업은 없으며 Android의 앱 자동 백업·기기 이전 대상에서도 앱 데이터를 제외합니다. 사용자가 별도 도구로 복사하거나 보관한 자료는 그 도구와 저장 위치에서 관리해야 합니다.</p>
+
+      <h3>3. 보관기간과 삭제</h3>
+      <p>앱 내부 음원과 연습 설정은 사용자가 연습에 이용하거나 보관함에 저장하는 동안 기기에 남습니다. 보관함 항목을 삭제해 관리할 수 있습니다. 같은 음원을 현재 곡이나 다른 저장 항목이 참조하고 있으면 관련 오디오가 즉시 삭제되지 않을 수 있습니다. 다른 곡을 선택하고 해당 음원을 참조하는 보관함 항목을 정리하거나, Android 설정 → 앱 → druMup → 저장공간에서 데이터를 삭제하거나 앱을 제거하여 앱 내부 데이터를 삭제할 수 있습니다. 이 작업은 기기에 저장한 연습 내용을 지우며 되돌릴 수 없을 수 있습니다. 앱이 불러온 외부 원본 음원은 삭제하지 않습니다.</p>
+      <p>음성 합성용 임시 파일은 처리 완료·취소·실패 시 정리합니다. 강제 종료 등으로 남은 임시 캐시는 Android의 앱 캐시 또는 앱 데이터 삭제로 정리할 수 있습니다. 운영자는 기기에만 있는 파일을 원격으로 열람하거나 삭제할 수 없습니다.</p>
+
+      <h3>4. 문의할 때 제공하는 정보</h3>
+      <p>이메일 문의는 선택 사항입니다. <a href="mailto:druminghyuk@gmail.com">druminghyuk@gmail.com</a>으로 문의하면 발신 이메일 주소, 표시 이름, 문의 내용과 사용자가 보낸 첨부파일을 문의 확인·답변과 권리 행사 처리에 사용합니다. 문의 목적에 필요하지 않은 주민등록번호, 건강 정보, 계정 비밀번호 또는 음원 전체를 보내지 마세요.</p>
+      <p>문의 정보는 문의와 관련 요청의 처리가 완료될 때까지 보관하고, 처리 목적을 달성하여 불필요해지면 지체 없이 삭제합니다. 법령에 따른 보관 의무가 있는 경우에는 해당 항목만 그 법령이 요구하는 기간 동안 보관합니다. 삭제 요청은 같은 이메일로 할 수 있습니다.</p>
+      <p>문의 메일은 Google의 Gmail을 통해 수신·보관·회신합니다. 메일 전달 과정에서 이메일 주소, 본문, 첨부파일 및 전달에 필요한 정보가 메일 서비스에 의해 처리되며, Google의 정책에 따라 국외에서 처리될 수 있습니다. 자세한 사항은 <a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>을 참고하세요. 메일 문의를 하지 않아도 앱의 기기 내 연습 기능을 이용할 수 있습니다.</p>
+
+      <h3>5. 권한과 안전한 처리</h3>
+      <p>앱은 음악·메트로놈 재생을 유지하기 위한 Android 미디어 재생 서비스와 절전 방지 기능을 사용합니다. 마이크, 카메라, 연락처, 위치 또는 광범위한 저장소 읽기 권한을 요청하지 않습니다. 음원 접근은 사용자가 시스템 파일 선택 화면에서 직접 고른 파일로 제한합니다.</p>
+      <p>앱 데이터는 Android의 앱 전용 저장공간에서 관리하며 불필요한 네트워크 권한과 자동 전송을 제한합니다. 개인정보 문의 내용은 문의 처리에 필요한 범위에서 접근·사용합니다. 사용자는 기기 잠금과 운영체제 업데이트 등 기기의 보안 기능을 함께 이용할 수 있습니다.</p>
+
+      <h3>6. 이용자와 법정대리인의 권리</h3>
+      <p>이용자와 적법한 법정대리인은 적용 법령에 따라 개인정보 열람, 정정, 삭제, 처리정지 등의 권리를 행사할 수 있습니다. 기기 내 정보는 위의 앱·Android 삭제 방법으로 직접 관리할 수 있으며, 운영자가 받은 문의 정보에 관한 요청은 개인정보 문의 이메일로 보내 주세요. 요청 처리에 필요한 최소한의 확인을 거쳐 안내합니다. 앱 계정을 만들지 않으므로 별도의 계정 탈퇴 절차는 없습니다.</p>
+      <p>아동을 포함한 이용자의 연습 정보는 동일하게 기기 안에서 처리합니다. 미성년자의 개인정보 문의나 권리 행사는 법정대리인이 대신할 수 있습니다. 이 앱은 이름, 생년월일 또는 연락처를 입력해야 하는 가입 기능을 제공하지 않습니다.</p>
+
+      <h3>7. 이 개인정보처리방침 웹페이지</h3>
+      <p>이 페이지는 로그인 없이 읽을 수 있는 GitHub Pages 웹페이지입니다. 페이지에는 문의 입력 폼, 광고·방문 분석 스크립트, 추적 쿠키를 넣지 않았습니다. 웹페이지를 제공하는 GitHub는 서비스 운영·보안을 위해 IP 주소 등 접속 정보를 처리할 수 있습니다. 해당 처리는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 개인정보처리방침</a>을 따릅니다. 이 웹페이지 방문 정보와 앱의 기기 내 음원·연습 데이터는 별개입니다.</p>
+
+      <h3>8. 방침의 변경과 연락처</h3>
+      <p>기능이나 데이터 처리 방식이 변경되면 이 페이지의 시행일과 내용을 갱신합니다. 추가적인 동의나 안내가 필요한 변경은 해당 기능을 제공하기 전에 적용되는 절차를 따릅니다. 현재 방침이 향후 광고·계정·결제 기능의 도입 또는 데이터 처리 변경에 대한 동의를 대신하지 않습니다.</p>
+      <p>운영자 및 개인정보 보호 담당자: <strong>강민혁 (MIN HYUK KANG)</strong><br>문의: <a href="mailto:druminghyuk@gmail.com">druminghyuk@gmail.com</a><br>시행일: <time datetime="2026-11-12">2026년 11월 12일</time></p>
+    </section>
+
+    <section id="en" class="policy-section" lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">English — Privacy Policy</h2>
+      <p>This policy explains how MIN HYUK KANG operates the druMup Android drum practice app and how information is handled. druMup processes the audio files you choose and your practice settings on your device. You can use the app without signing up or logging in. The current app has no advertising, payments, server synchronization, or developer-operated usage analytics.</p>
+
+      <h3>1. Information processed on your device</h3>
+      <ul>
+        <li><strong>Selected audio and file names:</strong> The app copies a file you choose in the Android file picker into app storage for importing, drum separation, playback, and library display. Your original external file remains in its original location.</li>
+        <li><strong>Processed audio and temporary files:</strong> Drum and backing tracks, playback audio, and working files are created on your device. Your audio is not uploaded to the operator's server or used to train AI models.</li>
+        <li><strong>Practice settings:</strong> BPM, click start point, playback position and speed, listening mode, music and click volumes, loop points, saved practice names, and app preferences are stored locally so you can resume practice and retain your settings.</li>
+        <li><strong>Spoken count-in:</strong> The app uses an installed offline English voice from an Android text-to-speech engine. It sends only the fixed words one, two, three, and four. It does not send your audio, file names, BPM, or practice history to that engine.</li>
+        <li><strong>Local diagnostics:</strong> Android diagnostic logs may contain playback or error information, including some file names and paths. The app does not automatically send these logs to a developer-operated crash-reporting server.</li>
+      </ul>
+
+      <h3>2. Transmission and external services</h3>
+      <p>druMup does not use direct Internet access permission and does not transmit your audio or practice history to the operator's servers. Automatic usage-information transmission is disabled in ONNX Runtime, the component used for on-device AI processing. Audio and practice data are not sold to third parties or shared for advertising.</p>
+      <p>Android, Google Play, text-to-speech engines, and cloud storage providers available through the file picker are separate services. If you select a file stored in the cloud or use an external service, that provider may process information under its own settings and privacy policy. On-device processing in druMup does not block all communication by your phone or other services.</p>
+      <p>The app has no built-in cloud backup and excludes its data from Android automatic app backup and device transfer. Copies you make with other tools remain subject to those tools and storage locations.</p>
+
+      <h3>3. Retention and deletion</h3>
+      <p>Local audio and practice settings remain on your device while you use or save them for practice. You can manage saved entries in the library. Audio may remain when it is referenced by the current song or another saved practice entry. To remove it, switch to another song and remove the saved entries referring to that audio, or clear druMup's app data in Android Settings → Apps → druMup → Storage, or uninstall the app. Clearing data removes locally saved practice and may be irreversible. It does not delete the original external audio files you imported.</p>
+      <p>Temporary speech-synthesis files are cleaned up when processing completes, is cancelled, or fails. Files left after a forced shutdown can be removed through Android's app-cache or app-data controls. The operator cannot remotely read or delete files stored only on your device.</p>
+
+      <h3>4. Information you provide when contacting us</h3>
+      <p>Email support is optional. When you contact <a href="mailto:druminghyuk@gmail.com">druminghyuk@gmail.com</a>, we use your sender email address, display name, message, and any attachments you choose to send to handle the inquiry, reply, and respond to privacy requests. Please do not send unnecessary identity numbers, health information, account passwords, or entire audio files.</p>
+      <p>Inquiry information is retained until the inquiry and associated requests have been handled and is deleted without undue delay once it is no longer needed for that purpose. Where retention is required by law, only the necessary information is kept for the required period. You may request deletion using the same email address.</p>
+      <p>We use Google's Gmail to receive, store, and reply to messages. Email addresses, message contents, attachments, and information needed to deliver messages are processed by the email service and may be processed outside your country under Google's policies. See the <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>. You can use the app's on-device practice features without sending a support email.</p>
+
+      <h3>5. Permissions and safeguards</h3>
+      <p>The app uses Android media-playback services and wake-lock functionality to keep audio and the metronome running. It does not request microphone, camera, contacts, location, or broad storage-reading permission. Audio access is limited to files you choose through the system file picker.</p>
+      <p>App data is kept in Android app-specific storage, and unnecessary network permissions and automatic transmission are restricted. Support information is accessed and used as needed to handle inquiries. You can also protect local data using your device's screen lock and operating-system updates.</p>
+
+      <h3>6. Your rights and children's information</h3>
+      <p>Depending on applicable law, you or an authorized legal representative may request access, correction, deletion, or restriction of personal information. Manage on-device data using the app and Android controls described above. Contact the privacy email for requests concerning information the operator has received, such as support messages. We may request the minimum information needed to verify and handle a request. There is no separate account-deletion procedure because the app does not create user accounts.</p>
+      <p>Practice information for children is processed on the device in the same way. A parent or legal guardian may handle a minor's privacy inquiry or request. The app has no sign-up feature that asks for names, dates of birth, or contact details.</p>
+
+      <h3>7. This privacy-policy webpage</h3>
+      <p>This policy is available without login through GitHub Pages. The page includes no contact-entry form, advertising or visitor-analytics script, or tracking cookies. GitHub may process connection information such as IP addresses to operate and secure its hosting service under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>. Visiting this webpage is separate from the audio and practice data processed inside the app.</p>
+
+      <h3>8. Changes and contact</h3>
+      <p>We will update this page and its effective date when features or data handling change. Where additional notice or consent is required, the applicable process will be followed before the new processing begins. This policy does not provide advance consent for future advertising, accounts, payments, or other changes in data processing.</p>
+      <p>Operator and privacy contact: <strong>MIN HYUK KANG (강민혁)</strong><br>Email: <a href="mailto:druminghyuk@gmail.com">druminghyuk@gmail.com</a><br>Effective date: <time datetime="2026-11-12">November 12, 2026</time></p>
+    </section>
+    <nav class="legal-policy-links" aria-label="관련 안내"><a href="./">DrumUp 안내</a><a href="./terms.html">DrumUp 이용약관</a><a href="../index.html">공식 홈페이지</a></nav>
+  </main>
+  <footer class="footer wrap app-footer"><span>druMup · 개인정보처리방침 / Privacy Policy</span></footer>
+</body>
+</html>
