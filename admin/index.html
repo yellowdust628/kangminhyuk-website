@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>방문 통계 · KANG MIN HYUK</title>
+  <link rel="stylesheet" href="./admin.css">
+  <script type="module" src="./admin.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a href="../" aria-label="강민혁 공식 홈페이지">KMH<span>.</span></a>
+  </header>
+  <main>
+    <h1>방문 통계</h1>
+    <div id="login">
+      <p>관리자 Google 계정으로 로그인하면 통계를 확인할 수 있습니다.</p>
+      <button type="button" id="sign-in">Google 계정으로 열기</button>
+      <p class="note">Google 계정을 여러 개 사용 중이라면 Chrome 시크릿 창에서 관리자 계정으로 열어 주세요.</p>
+    </div>
+    <p id="status" role="status"></p>
+    <noscript><p>통계를 확인하려면 자바스크립트를 켜 주세요.</p></noscript>
+
+    <div id="dashboard" hidden>
+      <h2 id="total-title">누적 합계</h2>
+      <dl class="totals" aria-labelledby="total-title">
+        <div><dt>홈페이지 전체 조회</dt><dd id="total-pages"></dd></div>
+        <div><dt>DrumUp 모집 페이지 조회</dt><dd id="total-drumup"></dd></div>
+        <div><dt>신청 버튼 클릭</dt><dd id="total-apply"></dd></div>
+      </dl>
+      <p class="note">전체 조회에는 DrumUp 페이지도 포함됩니다. 같은 사람이 다시 열면 한 번 더 집계됩니다.</p>
+
+      <section aria-labelledby="daily-title">
+        <h2 id="daily-title">최근 30일</h2>
+        <p class="note">한국시간 기준 · 집계된 날짜만 표시</p>
+        <div class="table-wrap">
+          <table aria-label="일별 조회와 클릭 수">
+            <thead>
+              <tr><th scope="col">날짜</th><th scope="col">전체 조회</th><th scope="col">모집 조회</th><th scope="col">신청 클릭</th></tr>
+            </thead>
+            <tbody id="days"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
