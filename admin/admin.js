@@ -4,6 +4,7 @@ const signIn = document.querySelector('#sign-in');
 const status = document.querySelector('#status');
 const proofKey = 'kmh-admin-proof';
 const tokenPattern = /^[a-f0-9]{64}$/;
+const totalIds = ['total-pages', 'total-drumup', 'total-apply', 'total-news', 'total-youtube', 'total-instagram', 'total-book'];
 
 if (!collectorUrl || !signInUrl) {
   signIn.disabled = true;
@@ -45,7 +46,7 @@ async function loadAnalytics(code) {
 
     const response = await fetch(collectorUrl, {
       method: 'POST',
-      body: new URLSearchParams({ event: 'read', code, proof }),
+      body: new URLSearchParams({ event: 'read', code, proof, detail: '1' }),
       credentials: 'omit',
       cache: 'no-store',
       referrerPolicy: 'no-referrer'
@@ -67,8 +68,9 @@ async function loadAnalytics(code) {
 
 function showAnalytics({ totals, days }) {
   const format = new Intl.NumberFormat('ko-KR');
-  ['total-pages', 'total-drumup', 'total-apply'].forEach((id, index) => {
-    document.getElementById(id).textContent = format.format(totals[index]);
+  const formatCount = count => count == null ? '—' : format.format(count);
+  totalIds.forEach((id, index) => {
+    document.getElementById(id).textContent = formatCount(totals[index]);
   });
   const table = document.querySelector('#days');
   days.forEach(([date, ...counts]) => {
@@ -77,11 +79,11 @@ function showAnalytics({ totals, days }) {
     heading.scope = 'row';
     heading.textContent = date;
     row.append(heading);
-    counts.forEach(count => { row.insertCell().textContent = format.format(count); });
+    totalIds.forEach((_, index) => { row.insertCell().textContent = formatCount(counts[index]); });
   });
   if (days.length === 0) {
     const cell = table.insertRow().insertCell();
-    cell.colSpan = 4;
+    cell.colSpan = totalIds.length + 1;
     cell.textContent = '최근 30일에 집계된 기록이 없습니다.';
   }
 

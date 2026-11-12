@@ -44,7 +44,7 @@ button {
 }
 
 button:disabled { opacity: .55; cursor: default; }
-a:focus-visible, button:focus-visible { outline: 2px solid #245d9c; outline-offset: 4px; }
+a:focus-visible, button:focus-visible, .table-wrap:focus-visible { outline: 2px solid #245d9c; outline-offset: 4px; }
 #status:empty { display: none; }
 
 .totals {
@@ -55,18 +55,28 @@ a:focus-visible, button:focus-visible { outline: 2px solid #245d9c; outline-offs
 }
 
 .totals > div { padding: 1rem; border: 1px solid #ccc; background: #fff; }
+.content-totals { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .totals dd { margin: .15rem 0 0; font-size: clamp(1.45rem, 5vw, 2.2rem); font-weight: 700; }
 .note { margin: .4rem 0; color: #515151; font-size: .875rem; }
 section { margin-top: 2.1rem; }
 .table-wrap { overflow-x: auto; margin-top: .75rem; }
+.table-hint { display: none; }
 table { width: 100%; border-collapse: collapse; background: #fff; }
 th, td { padding: .65rem .75rem; border-bottom: 1px solid #d5d5d5; text-align: right; white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; }
+th:first-child { position: sticky; left: 0; background: #fff; }
+thead th:first-child { background: #e8e8e6; }
 thead { background: #e8e8e6; }
 dd, td { font-variant-numeric: tabular-nums; }
+
+@media (max-width: 48rem) {
+  .table-hint { display: block; }
+}
 
 @media (max-width: 40rem) {
   .totals { grid-template-columns: 1fr; }
   .totals > div { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; }
+  .content-totals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .content-totals > div { display: block; }
   th, td { padding-inline: .4rem; font-size: .875rem; }
 }
